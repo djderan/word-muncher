@@ -26,7 +26,7 @@ namespace word_muncher
             ContentList = contents
                 .Split(Delimitters, StringSplitOptions.RemoveEmptyEntries)
                 .Select(s => s.Trim().ToLowerInvariant().StemWord())
-                .Where(s => !StopWords.Any(stopWord => stopWord.Equals(s, StringComparison.OrdinalIgnoreCase)));
+                .Where(s => !string.IsNullOrEmpty(s) && !StopWords.Any(stopWord => stopWord.Equals(s, StringComparison.OrdinalIgnoreCase)));
 
             foreach (string word in ContentList)
             {

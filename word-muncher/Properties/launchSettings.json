@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "word-muncher": {
+      "commandName": "Project",
+      "commandLineArgs": "../../../../Text2.txt ../../../../Results.txt"
+    }
+  }
+}

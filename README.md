@@ -16,7 +16,7 @@ Test2 and output to Results.txt in the root folder.
 ## Data Assumptions
 This program assumes that all the stop words are not provided at run time and are instead
 accessed as a resource.  This program assumes that the input will be skipping any non alpha
-or white space characer and then defining a word as letters between to white space characters.
+or white space character and then defining a word as letters between to white space characters.
 
 ## Sample Output
 Output will be in the format of the word : number of occurances.
